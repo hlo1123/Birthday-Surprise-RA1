@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cinematic Birthday Surprise | For Someone Special</title>
+    <!-- High-End Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section id="hero-page" class="page active">
+        <div id="particle-container"
+            style="position: absolute; width: 100%; height: 100%; top:0; left:0; pointer-events: none;"></div>
+        <h1 class="hero-title">Happy Birthday, Babu❤️</h1>
+        <p class="hero-sub">A Cinematic Journey Created Just For You</p>
+        <button class="btn-neon" onclick="transitionTo('message-slider-page')">Open Your Gift</button>
+    </section>
+
+    <!-- MESSAGE SLIDER SECTION -->
+    <section id="message-slider-page" class="page">
+        <div id="slider-particles"
+            style="position: absolute; width: 100%; height: 100%; top:0; left:0; pointer-events: none;"></div>
+        <div class="slider-card">
+            <div id="step-1" class="step-content active">
+                <h2 class="step-text">It's Your Special Day</h2>
+                <button class="btn-neon" onclick="nextStep(2)">Next</button>
+            </div>
+            <div id="step-2" class="step-content">
+                <h2 class="step-text">Have a look at it Madam Jii</h2>
+                <button class="btn-neon" onclick="nextStep(3)">Next</button>
+            </div>
+            <div id="step-3" class="step-content">
+                <h2 class="step-text">Ready for your surprise?</h2>
+                <button class="btn-neon" onclick="finishSlider()">Let's Go</button>
+            </div>
+            <div class="slider-dots">
+                <div id="dot-1" class="dot active"></div>
+                <div id="dot-2" class="dot"></div>
+                <div id="dot-3" class="dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CELEBRATION SECTION -->
+    <section id="celebration-page" class="page">
+        <div class="fairy-lights-container" id="fairy-lights-container">
+            <svg class="wire-svg" preserveAspectRatio="none" viewBox="0 0 1000 150">
+                <path id="wire-path" d="M0,20 Q100,60 200,20 T400,20 T600,20 T800,20 T1000,20" />
+            </svg>
+        </div>
+        <div class="glass-container" style="background: transparent; border: none; box-shadow: none;">
+            <h2 id="celeb-hint" style="font-size: 1.5rem; margin-bottom: 30px; letter-spacing: 2px;">The Stage is Set...
+            </h2>
+            <button id="celeb-master-btn" class="btn-neon" onclick="celebFlow()">💡 Turn On Lights</button>
+        </div>
+    </section>
+
+    <!-- CURTAIN SECTION -->
+    <section id="curtain-page" class="page" style="padding: 0;">
+        <div class="stage" id="stage">
+            <div class="curtain-panel curtain-left"></div>
+            <div class="curtain-panel curtain-right"></div>
+            <div class="secret-content">
+                <div class="message-card" id="message-card">
+                    <h2
+                        style="font-family: 'Dancing Script'; font-size: clamp(2rem, 5vw, 3.5rem); color: var(--accent); margin-bottom: 20px;">
+                        To Dearest Sia,</h2>
+                    <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: rgba(255,255,255,0.8);">
+                        Dear Meri Babu, ❤️
+
+Happiest Birthday, meri jaan! 🎂❤️
+
+Pata hai Babu, kabhi-kabhi sochta hoon ki humari baatein kaise shuru hui thi aur kaise itni jaldi hum ek-dusre ke itne close aa gaye. Sab kuch kitni jaldi hua na! Na jaane kab normal si baatein special ban gayi aur kab tum meri life ka itna important part ban gayi. ❤️
+Babu, tum sach mein bahut achhi ho. Tumhara nature, tumhara pyaar aur jis tarah tum meri har chhoti-badi baat ka dhyan rakhti ho, mujhe bahut achha lagta hai. Tum kabhi mujhse gussa nahi hoti, meri baatein maanti ho aur mujhe itna pyaar karti ho. Kabhi-kabhi toh lagta hai ki yaar, itni achhi ladki mujhe mili kaise! 🥹❤️
+Aur tumhara mujhse milne ke liye itne efforts karna, ghar se bahane banakar aana… ye sab mere liye bahut special hai. Shayad main har baar express nahi kar pata, lekin tumhare ye chhote-chhote efforts mere liye bahut maayne rakhte hain.
+Main chahta hoon ki tum hamesha aise hi khush raho. Tumhari life mein kabhi kisi cheez ki kami na ho. Tumhare saare dreams poore hon aur tum jo bhi achieve karna chahti ho, woh sab achieve karo.
+Ek baat aur Babu, main nahi chahta ki tum kabhi mere saamne apni feelings chhupao ya har baar meri hi baat maano. Tumhari apni khushi, tumhari marzi aur tumhare dreams bhi mere liye utne hi important hain. ❤️
+Mujhe nahi pata future mein kya-kya hoga, lekin main chahta hoon ki hum aise hi ek-dusre ko samajhte rahein, support karein aur saath mein bahut saari beautiful memories banayein.
+You are not just someone I love, you are someone I feel lucky to have in my life. 🫶🏻
+Thank you meri life mein aane ke liye, mujhe itna pyaar dene ke liye aur meri boring si life ko itna special banane ke liye.
+Aur haan, aaj tumhara birthday hai toh jitna ho sake utna smile karna, kyunki tumhari smile bahut pyaari hai! ❤️
+Happy Birthday once again, Meri Babu! 🎀
+
+I LOVE YOU SO MUCH. ❤️
+                    </p>
+                    <button class="btn-neon" style="margin-top: 40px; animation: none;"
+                        onclick="transitionTo('gallery-page')">Our Memories</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATED GALLERY SECTION -->
+    <section id="gallery-page" class="page">
+        <!-- Persistent Background Elements -->
+        <div id="gallery-bg-elements"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1;">
+        </div>
+
+        <h2 class="gallery-title">Moments in Time</h2>
+        <div class="gallery-grid">
+            <!-- Memory 1 -->
+            <div class="memory-card">
+                <img src="photo1.jpg.jpeg" alt="Memory"
+                    class="memory-image">
+                <div class="memory-hover-overlay">
+                    <p class="hover-message">Jab bhi tumhe dekhta hoon, bas ek hi thought aata hai… How lucky I am to have you! 🥹</p>
+                </div>
+            </div>
+            <!-- Memory 2 -->
+            <div class="memory-card">
+                <img src="photo2.jpg.jpeg" alt="Memory"
+                    class="memory-image">
+                <div class="memory-hover-overlay">
+                    <p class="hover-message">Meri Babu, tumhari smile meri favourite notification se bhi zyada special hai. 🎀</p>
+                </div>
+            </div>
+            <!-- Memory 3 -->
+            <div class="memory-card">
+                <img src="photo3.jpg.jpeg" alt="Memory"
+                    class="memory-image">
+                <div class="memory-hover-overlay">
+                    <p class="hover-message">Thank you mere liye itne efforts karne ke liye. Tumhari chhoti-chhoti baatein mere liye bahut special hain. 🫶🏻</p>
+                </div>
+            </div>
+            <!-- Memory 4 -->
+            <div class="memory-card">
+                <img src="photo4.jpg.jpeg" alt="Memory"
+                    class="memory-image">
+                <div class="memory-hover-overlay">
+                    <p class="hover-message">Ek random si mulaqat nahi, tum meri life ki sabse beautiful feeling ban gayi ho. ❤️</p>
+                </div>
+            </div>
+            <!-- Memory 5 -->
+            <div class="memory-card">
+                <img src="photo5.jpg.jpeg" alt="Memory"
+                    class="memory-image">
+                <div class="memory-hover-overlay">
+                    <p class="hover-message">Ek wish hai… tumhare har birthday par tumhare saath rahun aur tumhe isi tarah special feel karata rahun. Happy Birthday, Meri Babu! ❤️</p>
+                </div>
+            </div>
+            <!-- Memory 6 -->
+            <div class="memory-card">
+                <img src="photo6.jpg.jpeg" alt="Memory"
+                    class="memory-image">
+                <div class="memory-hover-overlay">
+                    <p class="hover-message">Sab kuch kitni jaldi hua na? Lekin tumse pyaar hona meri favourite story hai. ❤️</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; padding: 100px 0;">
+            <button class="btn-neon" onclick="location.reload()">Replay The Magic</button>
+        </div>
+    </section>
+
+    <audio id="birthday-audio" loop>
+        <source src="song/meri.mpeg"type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
