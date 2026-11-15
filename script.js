@@ -158,4 +158,19 @@
         window.onload = () => {
             initFairyLights();
         };
+
+        // Birthday background music
+const birthdayAudio = document.getElementById("birthday-audio");
+
+document.addEventListener("click", function startBirthdayMusic() {
+
+    birthdayAudio.play()
+        .then(() => {
+            console.log("Birthday music started!");
+        })
+        .catch(error => {
+            console.log("Music error:", error);
+        });
+
+}, { once: true });
     
